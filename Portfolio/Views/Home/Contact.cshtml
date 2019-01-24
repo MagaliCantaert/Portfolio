@@ -1,17 +1,124 @@
-﻿@{
+﻿@model Portfolio.ViewModels.ContactViewModel
+@{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<section id="box-contact">
+    <h2 class="contact-title">Get in touch.</h2>
+    <h3 class="contact-subtitle">I would love to hear from you.</h3>
+</section>
+
+<section>
+    <h3 class="contact-intro">Ready to start a project? Let’s work together.</h3>
+    <h3 class="contact-intro">Just want to talk? I'm a great listener.</h3>
+</section>
+<br />
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+<div class="container">
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong class="contact-tempdata">@TempData["SuccessMessage"]</strong>
+    </div>
+</div>
+}
+
+
+
+<div class="col-md-12">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-6">
+        <div asp-validation-summary="ModelOnly"></div>
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input asp-for="FirstName" class="form-control input-sm" type="text" id="inputSmall">
+                </div>
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input asp-for="LastName" class="form-control input-sm" type="text">
+                </div>
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input asp-for="Email" class="form-control input-sm" type="email">
+                </div>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                    <input asp-for="Phone" class="form-control input-sm" type="tel">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-question-sign"></i></span>
+                    <input asp-for="Subject" class="form-control input-sm" type="text">
+                </div>
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <textarea asp-for="Message" class="form-control input-sm" rows="4" id="textArea"></textarea>
+                </div>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+
+            <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcMP4sUAAAAAFO2RJXOItSnYiv1LGIQICUS9tRN"></div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <button type="reset" id="btnReset" class="btn btn-default">Cancel</button>
+                    <button type="submit" id="btnSubmit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $('#btnSubmit').click(function () {
+        var $captcha = $('#recaptcha'),
+            response = grecaptcha.getResponse();
+
+        if (response.length === 0) {
+            $('.msg-error').text("reCAPTCHA is mandatory");
+            if (!$captcha.hasClass("error")) {
+                $captcha.addClass("error");
+            }
+        } else {
+            $('.msg-error').text('');
+            $captcha.removeClass("error");
+            alert('reCAPTCHA marked');
+        }
+    })
+</script>
+
+
+<div class="col-md-3"></div>
+
+<br />
+

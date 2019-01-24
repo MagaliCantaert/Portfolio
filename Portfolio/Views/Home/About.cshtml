@@ -1,7 +1,394 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+
+
+<h2 class="about-intro">
+    Hi, I’m Magali Cantaert, a fullstack .NET developer, currently working at TUI Belgium.
+</h2>
+
+<h2>I'm specialized in</h2>
+@*<section class="section-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 text-center">
+                    <div class="about-specialised-title">UI/UX Design</div>
+                    <img class="about-icon" src="~/images/ux.png" />
+                    <p>UI/UX Design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with the website.</p>
+                    <p>Once I've got all the necessary information, I design the visual aspect to create a beautiful user experience.</p>
+
+                </div>
+
+                <div class="col-md-4 col-xs-12 text-center">
+                    <div class="about-specialised-title">Front-end & Back-end development</div>
+                    <img class="about-icon" src="~/images/coding.png" />
+                    <p>
+                        Front-End Development is building out the visual components of a website.
+                        Using HTML, CSS and Javascript, I build interactive websites.
+                    </p>
+                    <p>
+                        Back end Development refers to the server side of development where you are primarily focused on how the site works.
+                        I prefer to use ASP.NET Core as back-end framework.
+                    </p>
+                </div>
+
+
+                <div class="col-md-4 col-xs-12 text-center">
+                    <div class="about-specialised-title">Responsive design</div>
+                    <img class="about-icon" src="~/images/responsive.png" />
+                    <p>A responsive website 'responds to' or resizes itself depending on the type of device you use.</p>
+                    <p>My layouts will work on any device. That could be a desktop computer monitor, a laptop or devices with small screen such as smartphones and tablets.</p>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+
+
+
+<div class="container">
+    <ul class="cards">
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_header">
+                    <div class="about-specialized-title">UI/UX Design</div>
+                </div>
+                <img class="about-icon" src="~/images/ux.png" />
+                <div class="card_content">
+                    <p>UI/UX Design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with the website.</p>
+                    <p>Once I've got all the necessary information, I design the visual aspect to create a beautiful user experience.</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_header">
+                    <div class="about-specialized-title">Front-end & Back-end development</div>
+                </div>
+                <img class="about-icon" src="~/images/coding.png" />
+                <div class="card_content">
+                    <p>
+                        Front-End Development is building out the visual components of a website.
+                        Using HTML, CSS and Javascript, I build interactive websites.
+                    </p>
+                    <p>
+                        Back end Development refers to the server side of development where you are primarily focused on how the site works.
+                        I prefer to use ASP.NET Core as back-end framework.
+                    </p>
+                </div>
+            </div>
+        </li>
+
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_header">
+                    <div class="about-specialized-title">Responsive design</div>
+                </div>
+                <img class="about-icon" src="~/images/responsive.png" />
+                <div class="card_content">
+                    <p>A responsive website 'responds to' or resizes itself depending on the type of device you use.</p>
+                    <p>My layouts will work on any device. That could be a desktop computer monitor, a laptop or devices with small screen such as smartphones and tablets.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<h2>Professional skills</h2>
+
+
+<section class="section-about">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>HTML5 & CSS3</B></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="90%"> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>ASP.NET CORE MVC</B></span>
+                        <div class="progress ">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="10" aria-valuemax="100" style="">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>SQL SERVER</B></span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="60%"> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>JavaScript</B></span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>jQuery</B></span>
+                        <div class="progress ">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="35" aria-valuemin="10" aria-valuemax="100" style="">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="35%"> </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>Vue.js</B></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="25%"> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>C#</B></span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="60%"> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>Xamarin</B></span>
+                        <div class="progress ">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="90%"> </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>PHP</B></span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="35%"> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>Windows Server</B></span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="60%"> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>GIT</B></span>
+                        <div class="progress ">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="barWrapper">
+                        <span class="progressText"><B>Adobe Creative Cloud</B></span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<h2>My journey</h2>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<!-- The Timeline -->
+
+
+<div class="timeline">
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <img class="timeline-img img-responsive" src="~/images/goal.png" />
+        </div>
+        <div class="timeline-content">
+            <div class="timeline-title">Starting my professional carreer</div>
+            <div class="timeline-content-date">Feb '19 - present</div>
+            <div class="timeline-text">My first job as an application developer</div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <img class="timeline-img img-responsive" src="~/images/graduation.png" />
+        </div>
+        <div class="timeline-content right">
+            <div class="timeline-title">Get my degree</div>
+            <div class="timeline-content-date">Jan '19</div>
+            <div class="timeline-text">I graduated in January 2019 from the HBO5 Education te Howest Bruges.</div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <img class="timeline-img img-responsive" src="~/images/airplane(1).png" />
+        </div>
+        <div class="timeline-content">
+            <div class="timeline-title">Internship TUI Belgium</div>
+            <div class="timeline-content-date">Nov '18 - Dec '18</div>
+            <div class="timeline-text">Project: ...</div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <img class="timeline-img img-responsive" src="~/images/www(1).png" />
+        </div>
+        <div class="timeline-content right">
+            <div class="timeline-title">Released my very first website</div>
+            <div class="timeline-content-date">Jan '18</div>
+            <div class="timeline-text">Frietboetiek</div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <img class="timeline-img img-responsive" src="~/images/coding (2).png" />
+        </div>
+        <div class="timeline-content">
+            <div class="timeline-title">Start Graduate Programming Course</div>
+            <div class="timeline-content-date">Sep '18</div>
+            <div class="timeline-text">Probably ...</div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <img class="timeline-img img-responsive" src="~/images/woman.png" />
+        </div>
+        <div class="timeline-content right">
+            <div class="timeline-title">Independent manager by Frietboetiek Middelkerke</div>
+            <div class="timeline-content-date">Feb '09 - Dec '18</div>
+            <div class="timeline-text">Frietboetiek</div>
+        </div>
+    </div>
+</div>
+
+
+@*<ul class="timeline">
+
+    <li>
+        <div class="direction-r">
+            <div class="flag-wrapper">
+                <span class="flag glyphicon-alert">Starting my professional carreer</span>
+                <span class="time-wrapper"><span class="time">Feb '19 - present</span></span>
+            </div>
+            <div class="desc">My first job as an application developer.</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="direction-l">
+            <div class="flag-wrapper">
+                <span class="flag">Get my degree</span>
+                <span class="time-wrapper"><span class="time">Jan '19</span></span>
+            </div>
+            <div class="desc">I graduated in January 2019 from the HBO5 Education te Howest Bruges.</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="direction-r">
+            <div class="flag-wrapper">
+                <span class="flag">Internship TUI Belgium</span>
+                <span class="time-wrapper"><span class="time">nov '18</span></span>
+            </div>
+            <div class="desc">During my internship at TUI Belgium I developed a project that ...</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="direction-l">
+            <div class="flag-wrapper">
+                <span class="flag">Released my very first website</span>
+                <span class="time-wrapper"><span class="time">Jan '18</span></span>
+            </div>
+            <div class="desc">Frietboetiek.</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="direction-r">
+            <div class="flag-wrapper">
+                <span class="flag">Start Graduate Programming Course</span>
+                <span class="time-wrapper"><span class="time">sep '17</span></span>
+            </div>
+            <div class="desc">Probably the best choice I ever made.</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="direction-l">
+            <div class="flag-wrapper">
+                <span class="flag">Independent manager by Frietboetiek Middelkerke</span>
+                <span class="time-wrapper"><span class="time">Feb '09 - Dec '18</span></span>
+            </div>
+            <div class="desc">Frietboetiek.</div>
+        </div>
+    </li>
+
+
+</ul>*@

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Portfolio.Models;
+using Portfolio.ViewModels;
 
 namespace Portfolio.Controllers
 {
@@ -22,12 +23,33 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Projects()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
+
+        public IActionResult Contact()
+        {
+            var viewModel = new ContactViewModel();
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Contact(ContactViewModel viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                TempData[Constants.SuccessMessage] = $"Thank you for your message, Mr./Mrs. {viewModel.LastName}. I will answer your message as soon as possible.";
+                return new RedirectToActionResult("Contact", "Home", null);
+            }
+            else
+            {
+                return View(viewModel);
+            }
+
+        }
+
 
         public IActionResult Privacy()
         {
