@@ -29,6 +29,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Encode+Sans+Condensed|Inconsolata|Libre+Barcode+128+Text|Montserrat|Open+Sans|Open+Sans+Condensed:300|Oxygen|Playfair+Display|Playfair+Display+SC|Prata|Roboto|Saira|Source+Sans+Pro:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132925317-1"></script>
@@ -40,8 +41,8 @@
     </script>
 </head>
 <body>
-    
-    <nav class="navbar navbar-default navbar-fixed-top">
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="overflow-x:hidden">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -63,12 +64,15 @@
         </div>
     </nav>
 
-    @*<partial name="_CookieConsentPartial" />*@
-
-    <div class="container-fluid body-content">
+    <div class="container-fluid body-content" >
         @RenderBody()
+        @*<div class='gotop'>
+            <i><img src="~/images/arrowblue.png" class="img-responsive" /></i>
+        </div>*@
 
     </div>
+
+
 
     @Html.Partial("_Footer")
 

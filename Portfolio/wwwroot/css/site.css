@@ -2,7 +2,12 @@
 for details on configuring this project to bundle and minify static web assets. */
 body {
     padding-top: 50px;
+    background-color: #F0F0F0;
+}
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Wrapping element */
@@ -10,6 +15,7 @@ body {
 .body-content {
     margin-top: 20px;
     height: 100%;
+    overflow-x:hidden;
     /*padding-left: 15px;
     padding-right: 15px;*/
 }
@@ -45,7 +51,7 @@ body {
 }
 
 .navbar-brand {
-    padding: 0 15px;
+    /*padding: 0 15px;*/
     height: 80px;
     line-height: 80px;
 }
@@ -146,14 +152,12 @@ h4 {
     letter-spacing: 9px;
     margin-bottom: 15px;
     margin-top: 30px;
-    /*margin-left:25%;*/
     text-transform: uppercase;
     text-align: center;
 }
 
 .site-subtitle {
     margin: 5px;
-    /*margin-left:-25%;*/
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -170,30 +174,6 @@ h4 {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    text-align: center;
-    /*letter-spacing: 1px;*/
-}
-
-.my-info {
-    margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-}
-
-#my-picture {
-    margin-top: 20px;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-
-.control-label {
-    margin: 5px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 4px;
     text-align: center;
 }
 
@@ -265,7 +245,7 @@ svg {
     left: 0;
 }
 
-    svg rect, svg path, svg polyline {
+svg rect, svg path, svg polyline {
         fill: none;
         stroke: #008cba;
         stroke-width: 1;
@@ -276,7 +256,6 @@ svg {
     text-decoration:none;
 }
 
-/* Basic Box */
 svg rect {
     stroke-dasharray: 400, 0;
     -webkit-transition: all 0.8s ease-in-out;
@@ -317,11 +296,6 @@ svg rect {
     margin-bottom:20px;
 }
 
-.project-image {
-    /*line-height: 0;*/
-    /*overflow: hidden;*/
-}
-
 .project-image img {
     /*filter: blur(0px);*/
     /*opacity:0.2;*/
@@ -332,7 +306,6 @@ svg rect {
 .project-title {
     font-size: 1.5em;
     font-family: 'Anton', sans-serif;
-    /*font-weight: bold;*/
     z-index: 1;
     position: absolute;
     height: 100%;
@@ -340,8 +313,6 @@ svg rect {
     top: 0;
     left: 0;
     opacity: 0;
-    /*transition: opacity .5s;*/
-    /*background: rgba(219, 248, 255, 0.4);*/
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     color: black;
     display: flex;
@@ -379,15 +350,25 @@ svg rect {
 
 .about-intro {
     /*padding-top: 25px;*/
-    margin: 20px 30px;
+    margin: 20px 35px;
     color: black;
     font-size: 17px;
     font-weight: 500;
     line-height: 1.5;
     /*letter-spacing: 1px;*/
-    text-align: center;
+    text-align: justify;
     text-transform: none;
     font-family: 'Source Sans Pro', sans-serif;
+}
+.about-intro-section{
+    margin-bottom:10px;
+}
+.signature {
+    font-family: 'Sacramento', cursive;
+    text-align:end;
+    margin-right:20px;
+    margin-bottom:20px;
+    font-size:35px;
 }
 .about-specialized-title {
     text-transform: uppercase;
@@ -402,13 +383,14 @@ svg rect {
 }
 .about-img{
     border-radius:50%;
-    margin-bottom:70px;
+    margin-bottom:80px;
     filter: grayscale(50%);
-    opacity:0.9;
+    /*opacity:0.9;*/
+    border:2px solid black;
 
 }
 .about-img:hover {
-    opacity:0.8;
+    animation: ease-in-out;
 }
 
 .about-span{
@@ -452,8 +434,8 @@ svg rect {
 }
 
 .progress-bar {
-    -webkit-transition: width 1.5s ease-in-out;
-    transition: width 1.5s ease-in-out;
+    -webkit-transition: width 2.5s ease-in-out;
+    transition: width 2.5s ease-in-out;
 }
 
 /*#region ABOUT - CARDS */
@@ -812,5 +794,18 @@ h7 {
 
 /*#endregion */
 
-
-
+.gotop {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color:#008cba;
+  cursor: pointer;
+  z-index: 51;
+  width: 0;
+  border-radius: 50% 0 0 50%;
+  transition: all .3s ease;
+}

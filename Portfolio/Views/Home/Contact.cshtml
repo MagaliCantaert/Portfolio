@@ -18,8 +18,6 @@
 @await Html.PartialAsync("_NotificationPartial")
 
 
-
-<div class="col-md-12">
     <div class="col-md-3"></div>
 
     <div class="col-md-6">
@@ -88,7 +86,7 @@
             </div>
         </form>
     </div>
-</div>
+
 
 <script>
     $('#btnSubmit').click(function () {
@@ -96,7 +94,7 @@
             response = grecaptcha.getResponse();
 
         if (response.length === 0) {
-            $('.msg-error').text("reCAPTCHA is mandatory");
+            $('.msg-error').text("Please verify that you're not a robot.");
             if (!$captcha.hasClass("error")) {
                 $captcha.addClass("error");
             }
@@ -112,4 +110,3 @@
 <div class="col-md-3"></div>
 
 <br />
-
