@@ -48,13 +48,13 @@ namespace Portfolio.Controllers
                     System.Net.NetworkCredential SmtpUser = new System.Net.NetworkCredential();
 
                     Message.From = new MailAddress(viewModel.Email);
-                    Message.To.Add(new MailAddress(""));
+                    Message.To.Add(new MailAddress("HIER JE EMAIL"));
                     Message.IsBodyHtml = false;
                     Message.Subject = "Question on website";
                     Message.Body = $"{viewModel.Message} \n\n Details sender: {viewModel.LastName} {viewModel.FirstName} \n {viewModel.Phone} \n {viewModel.Email} \n";
 
-                    SmtpUser.UserName = "";
-                    SmtpUser.Password = "";
+                    SmtpUser.UserName = "HIER JE EMAIL";
+                    SmtpUser.Password = "WACHTWOORD";
 
                     Smtp.UseDefaultCredentials = false;
                     Smtp.Credentials = SmtpUser;
@@ -69,7 +69,7 @@ namespace Portfolio.Controllers
                 }
                 catch (Exception)
                 {
-                    TempData[Constants.FailedMessage] = $"An error occured while sending your message.<br />Please try again later.";
+                    TempData[Constants.FailedMessage] = $"An error occured while sending your message. Please try again later.";
                     return View();
                 }
             }

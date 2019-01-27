@@ -1,0 +1,21 @@
+﻿@using Portfolio
+
+@if (TempData.ContainsKey(Constants.SuccessMessage))
+{
+    <div class="container">
+        <div class="alert alert-dismissible alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong class="contact-tempdata">@TempData["SuccessMessage"]</strong>
+        </div>
+    </div>
+}
+
+@if (TempData.ContainsKey(Constants.FailedMessage))
+{
+    <div class="container">
+        <div class="alert alert-dismissible alert-danger">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong class="contact-tempdata">@TempData["FailedMessage"]</strong>
+        </div>
+    </div>
+}

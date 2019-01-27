@@ -3,7 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Portfolio</title>
+    <meta name="description" content="Magali Cantaert is a Full-Stack .NET Developer, based in Newport, Belgium.">
+    <meta name="keywords" content="Magali Cantaert, Magali, Cantaert, Developer, Fullstack, .NET, .NET Core, Webdesign, Webdesigner, Newport" />
+
+    <title>Magali Cantaert | Portfolio - @ViewData["Title"]</title>
+    <link rel="icon" href="~/images/imac.png" />
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -19,19 +23,21 @@
         <link rel="stylesheet" href="~/css/site.css" />
         <script src="~/js/site.js"></script>
     </environment>
+
+    <!-- Google Recaptcha -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Encode+Sans+Condensed|Inconsolata|Libre+Barcode+128+Text|Montserrat|Open+Sans|Open+Sans+Condensed:300|Oxygen|Playfair+Display|Playfair+Display+SC|Prata|Roboto|Saira|Source+Sans+Pro:300" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132925317-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-132925317-1');
     </script>
-
 </head>
 <body>
     
@@ -57,7 +63,7 @@
         </div>
     </nav>
 
-    <partial name="_CookieConsentPartial" />
+    @*<partial name="_CookieConsentPartial" />*@
 
     <div class="container-fluid body-content">
         @RenderBody()
