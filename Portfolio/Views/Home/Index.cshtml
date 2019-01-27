@@ -2,38 +2,95 @@
     ViewData["Title"] = "Home Page";
 }
 
+@*<div class="box1">
+        <img src="~/images/macbook.jpg" class="bg"  />
+    </div>*@
 
 
-<section id="box1">
-    <p class="site-title">I'm Magali Cantaert</p>
-    <p class="site-description">.NET Developer</p>
-</section>
+@*<div class="container">
+    <div class="col-md-8 col-xs-12">
 
-<section id="box2"></section>
-
+        <p class="site-title">Magali Cantaert</p>
+        <p class="site-subtitle">Full Stack .NET Developer</p>
 
 
-
-
-
-<div class="container">
-    <div class="my-info">
-        <p>Info</p>
-        @*<div class="col-md-6 col-xs-12">
-            <p>I currently am working as a Application developer at TUI Belgium, 
-            which is where my passion for design and development converge. 
-            I'm familiar with the Microsoft .NET Core framework and MS SQL database.
-            Outside of work I have a beautiful girlfriend (obviously), two big cats and a fluffy dog. 
-            
-            If you're interested in starting a new project, I'd love to get coffee and get to know you, so don’t hesitate to get in touch. </p>
-        </div>*@
-        <div class="col-md-6 col-xs-12">
-            @*<img id="my-picture" class="img-responsive" src="~/images/eee.jpg"  />*@
-            <p>Foto</p>
+        <div class="site-description">
+            I'm a webdesigner from Newport who just graduated from the HBO5 education IVO/Howest at Bruges.<br />
+            Thanks to this education I discovered a new passion:<br />
+            <span>'Designing web and mobile applications'</span>.
         </div>
+
+        <button>View my projects</button>
     </div>
+    <div class="col-md-4 col-xs-12">
+        <img src="~/images/back.jpg" class="imagecoding img-responsive" />
+    </div>
+</div>*@
 
 
 
-    <h2></h2>
+
+<div id="box1">
+    <div class="container">
+        <div class="col-md-8 col-xs-12">
+
+            <p class="site-title">Magali Cantaert</p>
+            <p class="site-subtitle">Full Stack .NET Developer</p>
+
+
+            <div class="site-description">
+                I'm a webdesigner from Newport who just graduated from the HBO5 education IVO/Howest at Bruges.<br />
+                Thanks to this education I discovered a new passion:<br />
+                <span class="home-span">'Designing web and mobile applications'</span>.
+
+            </div>
+
+            <a href="~/Home/Projects" >
+                <div class="basicBox">
+                    Discover my projects
+                    <svg width="200" height="65" viewBox="0 0 200 65" xmlns="http://www.w3.org/2000/svg">
+                        <rect x='0' y='0' fill='none' width='200' height='65' />
+                    </svg>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
 </div>
+
+
+
+
+
+@*<section id="box1">
+        <p class="site-title">Magali Cantaert</p>
+        <p class="site-description">Full Stack .NET Developer</p>
+    </section>*@
+
+
+
+@*<div class="container">
+        <div class="my-info">
+            <div class="col-md-6 col-xs-12">
+                <p>
+                    Hi all!
+
+                    My name is <span id="shake">Magali Cantaert</span>.
+                    I'm a webdesigner from Newport who just graduated from the HBO5 education IVO/Howest at Bruges.
+                    Thanks to this education I discovered a new passion: 'Designing web and mobile applications'.
+
+
+
+                </p>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <img id="my-picture" class="img-responsive" src="~/images/eee.jpg"  />
+                <p>Foto</p>
+            </div>
+        </div>
+
+
+
+        <button>View my projects</button>
+    </div>*@

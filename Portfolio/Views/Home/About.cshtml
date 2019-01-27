@@ -2,107 +2,125 @@
     ViewData["Title"] = "About";
 }
 
+<div class="container">
 
+    <h2>About me</h2>
+    <section class="section-about">
+        <div class="col-md-8 col-xs-12">
+            <div class="about-intro">
 
-<h2 class="about-intro">
-    Hi, I’m Magali Cantaert, a fullstack .NET developer, currently working at TUI Belgium.
-</h2>
+                I’m Magali Cantaert, a fullstack <span class="about-span">.NET developer</span>. <br />
+                I recently graduated from the <span class="about-span">HBO5 Programming</span> education at IVO/Howest Bruges.
 
-<h2>I'm specialized in</h2>
-@*<section class="section-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12 text-center">
-                    <div class="about-specialised-title">UI/UX Design</div>
-                    <img class="about-icon" src="~/images/ux.png" />
-                    <p>UI/UX Design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with the website.</p>
-                    <p>Once I've got all the necessary information, I design the visual aspect to create a beautiful user experience.</p>
-
-                </div>
-
-                <div class="col-md-4 col-xs-12 text-center">
-                    <div class="about-specialised-title">Front-end & Back-end development</div>
-                    <img class="about-icon" src="~/images/coding.png" />
-                    <p>
-                        Front-End Development is building out the visual components of a website.
-                        Using HTML, CSS and Javascript, I build interactive websites.
-                    </p>
-                    <p>
-                        Back end Development refers to the server side of development where you are primarily focused on how the site works.
-                        I prefer to use ASP.NET Core as back-end framework.
-                    </p>
-                </div>
-
-
-                <div class="col-md-4 col-xs-12 text-center">
-                    <div class="about-specialised-title">Responsive design</div>
-                    <img class="about-icon" src="~/images/responsive.png" />
-                    <p>A responsive website 'responds to' or resizes itself depending on the type of device you use.</p>
-                    <p>My layouts will work on any device. That could be a desktop computer monitor, a laptop or devices with small screen such as smartphones and tablets.</p>
-                </div>
+                Before I started this education, I was an independent employee of a family business for ten years.
+                But I always felt I was missing something. I didn't get the forfillment or challenge I seeked for,
+                so I started a new big chapter in my life, which I do not regret for a single moment.
+                <br />
+                I love to use my codings skills to make beautifuly organized websites and have a small preference
+                for <span class="about-span">UX</span> and <span class="about-span">front-end design</span>.
+                <br />
+                Outside of work, you'll find me in Disneyland Paris, walking my fluffy dog, teasing my two big cats
+                or attempt to cook a (delicious) meal.
+                <br />
+                Do not hesistate to <span class="about-span"><a href="~/Home/Contact">contact</a></span> me if you have any questions!
             </div>
         </div>
-    </section>*@
+        <div class="col-md-4 col-xs-12">
+            <img src="~/images/ik.jpg" class="about-img img-responsive" />
+        </div>
+    </section>
 
 
+    <h2>I'm specialized in</h2>
+    <section class="section-about">
 
-
-<div class="container">
-    <ul class="cards">
-        <li class="cards_item">
-            <div class="card">
-                <div class="card_header">
-                    <div class="about-specialized-title">UI/UX Design</div>
-                </div>
+        <div class="row">
+            <div class="col-md-4 col-xs-12 text-center">
+                <div class="about-specialized-title">UI/UX Design</div>
                 <img class="about-icon" src="~/images/ux.png" />
-                <div class="card_content">
-                    <p>UI/UX Design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with the website.</p>
-                    <p>Once I've got all the necessary information, I design the visual aspect to create a beautiful user experience.</p>
-                </div>
-            </div>
-        </li>
+                <p class="text-justify">UI/UX Design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with the website.</p>
+                <p class="text-justify">Once I've got all the necessary information, I design the visual aspect to create a beautiful user experience.</p>
 
-        <li class="cards_item">
-            <div class="card">
-                <div class="card_header">
-                    <div class="about-specialized-title">Front-end & Back-end development</div>
-                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 text-center">
+                <div class="about-specialized-title">Front-end & Back-end development</div>
                 <img class="about-icon" src="~/images/coding.png" />
-                <div class="card_content">
-                    <p>
-                        Front-End Development is building out the visual components of a website.
-                        Using HTML, CSS and Javascript, I build interactive websites.
-                    </p>
-                    <p>
-                        Back end Development refers to the server side of development where you are primarily focused on how the site works.
-                        I prefer to use ASP.NET Core as back-end framework.
-                    </p>
-                </div>
+                <p class="text-justify">
+                    Front-End Development is building out the visual components of a website.
+                    Using HTML, CSS and Javascript, I build interactive websites.
+                </p>
+                <p class="text-justify">
+                    Back end Development refers to the server side of development where you are primarily focused on how the site works.
+                    I prefer to use ASP.NET Core as back-end framework.
+                </p>
             </div>
-        </li>
 
-        <li class="cards_item">
-            <div class="card">
-                <div class="card_header">
-                    <div class="about-specialized-title">Responsive design</div>
-                </div>
+
+            <div class="col-md-4 col-xs-12 text-center">
+                <div class="about-specialized-title">Responsive design</div>
                 <img class="about-icon" src="~/images/responsive.png" />
-                <div class="card_content">
-                    <p>A responsive website 'responds to' or resizes itself depending on the type of device you use.</p>
-                    <p>My layouts will work on any device. That could be a desktop computer monitor, a laptop or devices with small screen such as smartphones and tablets.</p>
-                </div>
+                <p class="text-justify">A responsive website 'responds to' or resizes itself depending on the type of device you use.</p>
+                <p class="text-justify">My layouts will work on any device. That could be a desktop computer monitor, a laptop or devices with small screen such as smartphones and tablets.</p>
             </div>
-        </li>
-    </ul>
-</div>
+        </div>
+    </section>
+
+
+
+
+@*<div class="container">
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_header">
+                        <div class="about-specialized-title">UI/UX Design</div>
+                    </div>
+                    <img class="about-icon" src="~/images/ux.png" />
+                    <div class="card_content">
+                        <p>UI/UX Design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with the website.</p>
+                        <p>Once I've got all the necessary information, I design the visual aspect to create a beautiful user experience.</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_header">
+                        <div class="about-specialized-title">Front-end & Back-end development</div>
+                    </div>
+                    <img class="about-icon" src="~/images/coding.png" />
+                    <div class="card_content">
+                        <p>
+                            Front-End Development is building out the visual components of a website.
+                            Using HTML, CSS and Javascript, I build interactive websites.
+                        </p>
+                        <p>
+                            Back end Development refers to the server side of development where you are primarily focused on how the site works.
+                            I prefer to use ASP.NET Core as back-end framework.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_header">
+                        <div class="about-specialized-title">Responsive design</div>
+                    </div>
+                    <img class="about-icon" src="~/images/responsive.png" />
+                    <div class="card_content">
+                        <p>A responsive website 'responds to' or resizes itself depending on the type of device you use.</p>
+                        <p>My layouts will work on any device. That could be a desktop computer monitor, a laptop or devices with small screen such as smartphones and tablets.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>*@
 
 
 <h2>Professional skills</h2>
-
-
 <section class="section-about">
-    <div class="container">
-
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-4 col-xs-12">
@@ -247,7 +265,7 @@
             </div>
         </div>
 
-    </div>
+
 </section>
 
 
@@ -256,139 +274,95 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
-<!-- The Timeline -->
 
 
-<div class="timeline">
-    <div class="timeline-item">
-        <div class="timeline-icon">
-            <img class="timeline-img img-responsive" src="~/images/goal.png" />
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <img class="timeline-img img-responsive" src="~/images/goal.png" />
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-title">Starting my professional carreer</div>
+                <div class="timeline-content-date">Feb '19 - present</div>
+                <div class="timeline-text">Ready for launching my IT-carreer.</div>
+            </div>
         </div>
-        <div class="timeline-content">
-            <div class="timeline-title">Starting my professional carreer</div>
-            <div class="timeline-content-date">Feb '19 - present</div>
-            <div class="timeline-text">My first job as an application developer</div>
-        </div>
-    </div>
 
-    <div class="timeline-item">
-        <div class="timeline-icon">
-            <img class="timeline-img img-responsive" src="~/images/graduation.png" />
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <img class="timeline-img img-responsive" src="~/images/graduation.png" />
+            </div>
+            <div class="timeline-content right">
+                <div class="timeline-title">Got my degree</div>
+                <div class="timeline-content-date">Jan '19</div>
+                <div class="timeline-text">
+                    I graduated in January 2019 from the HBO5 Education Programming at Howest Bruges (with onderscheiding?).
+                </div>
+            </div>
         </div>
-        <div class="timeline-content right">
-            <div class="timeline-title">Get my degree</div>
-            <div class="timeline-content-date">Jan '19</div>
-            <div class="timeline-text">I graduated in January 2019 from the HBO5 Education te Howest Bruges.</div>
-        </div>
-    </div>
 
-    <div class="timeline-item">
-        <div class="timeline-icon">
-            <img class="timeline-img img-responsive" src="~/images/airplane(1).png" />
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <img class="timeline-img img-responsive" src="~/images/airplane(1).png" />
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-title">Internship TUI Belgium</div>
+                <div class="timeline-content-date">Nov '18 - Dec '18</div>
+                <div class="timeline-text">
+                    Project: "Operational flight legs to commercial segments".<br />
+                    During the internship I made an internal project to translate the operational segments of a flight
+                    to commercial segments. This for both direct and triangle flights.
+                    It was built within the ASP.NET Core framework using MVC model, with the focus on back- and front-end.
+                </div>
+            </div>
         </div>
-        <div class="timeline-content">
-            <div class="timeline-title">Internship TUI Belgium</div>
-            <div class="timeline-content-date">Nov '18 - Dec '18</div>
-            <div class="timeline-text">Project: ...</div>
-        </div>
-    </div>
 
-    <div class="timeline-item">
-        <div class="timeline-icon">
-            <img class="timeline-img img-responsive" src="~/images/www(1).png" />
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <img class="timeline-img img-responsive" src="~/images/www(1).png" />
+            </div>
+            <div class="timeline-content right">
+                <div class="timeline-title">Released my very first website</div>
+                <div class="timeline-content-date">Jan '18</div>
+                <div class="timeline-text">
+                    For a schoolassignment, we were allowed to choose our own project where we
+                    had the use the ASP.Net Core platform with the MS SQL database.
+                    I chose to make a web application for my parents with a reservation system.
+                    This was my first project ever that I put online.
+                    However it's (redelijk) basic, it was my first 'big' project.
+                </div>
+            </div>
         </div>
-        <div class="timeline-content right">
-            <div class="timeline-title">Released my very first website</div>
-            <div class="timeline-content-date">Jan '18</div>
-            <div class="timeline-text">Frietboetiek</div>
-        </div>
-    </div>
 
-    <div class="timeline-item">
-        <div class="timeline-icon">
-            <img class="timeline-img img-responsive" src="~/images/coding (2).png" />
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <img class="timeline-img img-responsive" src="~/images/coding (2).png" />
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-title">Start Graduate Programming Course</div>
+                <div class="timeline-content-date">Sep '18</div>
+                <div class="timeline-text">
+                    Starting the Graduate Programming Course at IVO/HOWEST Bruges was probably
+                    the best decision I ever made. I learned things that I didn't even know I was capable of.
+                </div>
+            </div>
         </div>
-        <div class="timeline-content">
-            <div class="timeline-title">Start Graduate Programming Course</div>
-            <div class="timeline-content-date">Sep '18</div>
-            <div class="timeline-text">Probably ...</div>
-        </div>
-    </div>
 
-    <div class="timeline-item">
-        <div class="timeline-icon">
-            <img class="timeline-img img-responsive" src="~/images/woman.png" />
-        </div>
-        <div class="timeline-content right">
-            <div class="timeline-title">Independent manager by Frietboetiek Middelkerke</div>
-            <div class="timeline-content-date">Feb '09 - Dec '18</div>
-            <div class="timeline-text">Frietboetiek</div>
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <img class="timeline-img img-responsive" src="~/images/woman.png" />
+            </div>
+            <div class="timeline-content right">
+                <div class="timeline-title">Independent manager by Frietboetiek Middelkerke</div>
+                <div class="timeline-content-date">Feb '09 - Dec '18</div>
+                <div class="timeline-text">
+                    When I graduated from high school, I took the decision to
+                    start a family restaurant together with my parents.
+                    For almost ten years, I have put my heart into this company.
+                    Until I was ready for a new challenge.
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-
-@*<ul class="timeline">
-
-    <li>
-        <div class="direction-r">
-            <div class="flag-wrapper">
-                <span class="flag glyphicon-alert">Starting my professional carreer</span>
-                <span class="time-wrapper"><span class="time">Feb '19 - present</span></span>
-            </div>
-            <div class="desc">My first job as an application developer.</div>
-        </div>
-    </li>
-
-    <li>
-        <div class="direction-l">
-            <div class="flag-wrapper">
-                <span class="flag">Get my degree</span>
-                <span class="time-wrapper"><span class="time">Jan '19</span></span>
-            </div>
-            <div class="desc">I graduated in January 2019 from the HBO5 Education te Howest Bruges.</div>
-        </div>
-    </li>
-
-    <li>
-        <div class="direction-r">
-            <div class="flag-wrapper">
-                <span class="flag">Internship TUI Belgium</span>
-                <span class="time-wrapper"><span class="time">nov '18</span></span>
-            </div>
-            <div class="desc">During my internship at TUI Belgium I developed a project that ...</div>
-        </div>
-    </li>
-
-    <li>
-        <div class="direction-l">
-            <div class="flag-wrapper">
-                <span class="flag">Released my very first website</span>
-                <span class="time-wrapper"><span class="time">Jan '18</span></span>
-            </div>
-            <div class="desc">Frietboetiek.</div>
-        </div>
-    </li>
-
-    <li>
-        <div class="direction-r">
-            <div class="flag-wrapper">
-                <span class="flag">Start Graduate Programming Course</span>
-                <span class="time-wrapper"><span class="time">sep '17</span></span>
-            </div>
-            <div class="desc">Probably the best choice I ever made.</div>
-        </div>
-    </li>
-
-    <li>
-        <div class="direction-l">
-            <div class="flag-wrapper">
-                <span class="flag">Independent manager by Frietboetiek Middelkerke</span>
-                <span class="time-wrapper"><span class="time">Feb '09 - Dec '18</span></span>
-            </div>
-            <div class="desc">Frietboetiek.</div>
-        </div>
-    </li>
-
-
-</ul>*@

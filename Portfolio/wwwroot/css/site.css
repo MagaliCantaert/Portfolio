@@ -2,12 +2,14 @@
 for details on configuring this project to bundle and minify static web assets. */
 body {
     padding-top: 50px;
+
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    margin-top:20px;
+    margin-top: 20px;
+    height: 100%;
     /*padding-left: 15px;
     padding-right: 15px;*/
 }
@@ -68,7 +70,7 @@ nav ul li > a {
 }
 
 nav ul li > a:hover {
-    color: #000;
+    color: #008cba;
     background-color: transparent;
 }
 
@@ -93,6 +95,12 @@ nav ul li > a:hover {
         transform: scaleX(1);
     }
 
+a{
+    color:black;
+}
+a:hover {
+    text-decoration: none;
+}
 
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -100,7 +108,7 @@ h2 {
     font-size: 22px;
     letter-spacing: 5px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -117,7 +125,7 @@ h3 {
 }
 h4 {
     margin: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -126,6 +134,8 @@ h4 {
     letter-spacing: 2px;
     text-align: center;
 }
+
+/*#region HOME */
 
 .site-title {
     font-family: 'Montserrat', sans-serif;
@@ -136,32 +146,43 @@ h4 {
     letter-spacing: 9px;
     margin-bottom: 15px;
     margin-top: 30px;
-    /*margin-left:-25%;*/
+    /*margin-left:25%;*/
     text-transform: uppercase;
     text-align: center;
-
 }
-.site-description {
+
+.site-subtitle {
     margin: 5px;
     /*margin-left:-25%;*/
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color:black;
+    color: black;
     font-size: 11px;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 4px;
-    text-align:center;
+    text-align: center;
 }
+
+.site-description {
+    margin: 80px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    /*letter-spacing: 1px;*/
+}
+
 .my-info {
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
 
-#my-picture{
-    margin-top:20px;
-    border-radius:50%;
+#my-picture {
+    margin-top: 20px;
+    border-radius: 50%;
     border: 1px solid black;
 }
 
@@ -177,15 +198,106 @@ h4 {
 }
 
 #box1 {
-    background-image: url(../images/pc2.jpg);
+    background-image: url(../images/macbook.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     margin: 0;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: static;
 }
 
+.home-span {
+    font-weight: 600;
+    color: #000;
+    background: #000 -webkit-linear-gradient(right, #000 0%, #bbb 50%, #000 100%);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation-name: shimmer;
+    -webkit-animation-duration: 3.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-background-size: 3.125rem 100%; /*50px*/
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: 0px;
+    }
+
+    80% {
+        background-position: 230px;
+    }
+
+    100% {
+        background-position: 280px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    #box1 {
+        background-size: cover;
+    }
+}
+
+.basicBox, .swiggleBox, .checkBox {
+    width: 200px;
+    height: 65px;
+    margin: 60px auto;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    line-height: 65px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    svg rect, svg path, svg polyline {
+        fill: none;
+        stroke: #008cba;
+        stroke-width: 1;
+    }
+
+.basicBox:hover svg rect, .swiggleBox:hover svg path, .checkBox:hover svg polyline {
+    stroke: #008cba;
+    text-decoration:none;
+}
+
+/* Basic Box */
+svg rect {
+    stroke-dasharray: 400, 0;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+}
+
+.basicBox:hover svg rect {
+    stroke-width: 3;
+    stroke-dasharray: 35, 245;
+    stroke-dashoffset: 38;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    text-decoration:none;
+}
+
+
+/*#endregion */
 
 /*#region PROJECTS */
 .project-img {
@@ -202,6 +314,7 @@ h4 {
 /* hover styles */
 .project-listing {
     position: relative;
+    margin-bottom:20px;
 }
 
 .project-image {
@@ -227,7 +340,7 @@ h4 {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity .5s;
+    /*transition: opacity .5s;*/
     /*background: rgba(219, 248, 255, 0.4);*/
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     color: black;
@@ -243,7 +356,10 @@ h4 {
 }
 
 .project-listing:hover .project-image img {
-    filter: blur(5px);
+    filter: blur(3px);
+    -moz-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    opacity:0.5;
 }
 
 /* for touch screen devices */
@@ -262,16 +378,16 @@ h4 {
 /*#region ABOUT */
 
 .about-intro {
-    padding-top: 25px;
-    margin: 50px auto;
+    /*padding-top: 25px;*/
+    margin: 20px 30px;
     color: black;
     font-size: 17px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 2px;
+    /*letter-spacing: 1px;*/
     text-align: center;
     text-transform: none;
-    font-family: 'Prata', serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .about-specialized-title {
     text-transform: uppercase;
@@ -283,6 +399,20 @@ h4 {
 .about-icon{
     width:80px;
     margin:40px auto;
+}
+.about-img{
+    border-radius:50%;
+    margin-bottom:70px;
+    filter: grayscale(50%);
+    opacity:0.9;
+
+}
+.about-img:hover {
+    opacity:0.8;
+}
+
+.about-span{
+    font-weight:bold;
 }
 .tooltip {
     position: relative;
@@ -633,21 +763,24 @@ h4 {
 /*#region FOOTER */
 
 footer {
-    margin-top: 30px;
-    background-color: #333333;
+    /*margin-top: 30px;*/
+    margin:0;
+    background-color: #2C2924;
 }
 
 .footer-text {
-    margin: 5px;
+    /*margin: 5px;*/
     color: floralwhite;
     line-height: 1.5em;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-    .footer-text:hover {
-        text-decoration: none;
-    }
+.footer-text:hover {
+    opacity:0.5;
+    text-decoration:none;
+}
+
 
 .logo {
     width: 35px;
@@ -655,13 +788,22 @@ footer {
 }
 
 #copyright {
-    background-color: #5E818D;
+    background-color: #1A1815;
     padding: 5px;
     margin: 0;
 }
+.barcode {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size:33px;
+    color:white;
+    letter-spacing: 4px;
+}
 
 h7 {
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-size:11px;
+    color:white;
 }
 
     h7:hover {
