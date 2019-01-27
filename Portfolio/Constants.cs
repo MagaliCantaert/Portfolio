@@ -8,5 +8,6 @@ namespace Portfolio
     public static class Constants
     {
         public const string SuccessMessage = "SuccessMessage";
+        public const string FailedMessage = "FailedMessage";
     }
 }
