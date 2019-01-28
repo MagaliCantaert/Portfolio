@@ -797,7 +797,7 @@ h7 {
 .gotop {
   position: fixed;
   bottom: 20px;
-  right: 0;
+  right: 10px;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -805,7 +805,6 @@ h7 {
   color:#008cba;
   cursor: pointer;
   z-index: 51;
-  width: 0;
   border-radius: 50% 0 0 50%;
   transition: all .3s ease;
 }
